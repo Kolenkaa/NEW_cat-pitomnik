@@ -39,7 +39,7 @@ html,
 body {
 	height: 100%;
 	line-height: 1;
-	font-size: 16px;
+	font-size: 16 px;
 	color: #ffffff;
 	font-weight: 400;
 	font-family: Roboto;
@@ -47,7 +47,7 @@ body {
 /*--------------------------------*/
 
 .container {
-	max-width: 1366px;
+	max-width: 1366 px;
 	width: 100%;
 	margin: 0px auto;
 }
@@ -55,13 +55,13 @@ body {
 header {
 	display: flex;
 	position: relative;
-	padding-top: 52px;
-	padding-bottom: 52px;
+	padding-top: 52 px;
+	padding-bottom: 52 px;
 	background-color: #181617;
 }
 
 .navigation_list > li:not(:first-child) {
-	margin-left: 40px;
+	margin-left: 40 px;
 }
 
 &-active {
@@ -80,7 +80,7 @@ a:hover {
 	&__link {
 		font-style: normal;
 		font-weight: 500;
-		font-size: 18px;
+		font-size: 18 px;
 		color: rgba(255, 255, 255, 0.2);
 	}
 
