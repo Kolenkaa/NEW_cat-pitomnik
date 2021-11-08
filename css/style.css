@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css2?family=Wendy+One&display=swap&subset=cyrillic-ext");
+/*Обнуление*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: Roboto;
+}
+
+/*--------------------------------*/
+.conteiner {
+  max-width: 1366px;
+  margin: 0px auto;
+}
+
+/*----------------------------------*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #181617;
+}
+
+.navigation {
+  width: 385px;
+  height: 116px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 0px 204px;
+}
+
+.navigation__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__link-active {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  height: 45px;
+  min-width: 106.72px;
+  margin-top: 52px;
+  margin-bottom: 18px;
+}
+
+.navigation__link-second {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.2);
+  height: 45px;
+  width: 122.93px;
+  margin: 52px 16.21px 18px 12.16px;
+}
+
+.navigation__link-third {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.2);
+  height: 45px;
+  width: 126.98px;
+  margin-top: 52px;
+  margin-bottom: 18px;
+}
+
+.navigation__logo {
+  margin: 0px 0px 0px 79.79px;
+  width: 60.33px;
+  height: 59.02px;
+}
