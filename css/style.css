@@ -75,6 +75,7 @@ header {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
+  line-height: 21px;
   color: rgba(255, 255, 255, 0.2);
 }
 
@@ -95,4 +96,14 @@ header {
 
 a:hover {
   color: rgba(255, 255, 255, 0.7);
+}
+
+/*---------------*/
+@media (max-width: 768px) {
+  .navigation__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
