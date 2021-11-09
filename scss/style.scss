@@ -49,7 +49,7 @@ body {
 .container {
 	max-width: 1366px;
 	width: 100%;
-	margin: 0 px auto;
+	margin: 0px auto;
 }
 
 header {
@@ -59,17 +59,8 @@ header {
 	padding-bottom: 52px;
 	background-color: #181617;
 }
-
 .navigation_list > li:not(:first-child) {
 	margin-left: 40px;
-}
-
-&-active {
-	color: #ffffff;
-}
-
-a:hover {
-	color: rgba(255, 255, 255, 0.7);
 }
 
 .navigation {
@@ -91,4 +82,7 @@ a:hover {
 .logo {
 	position: absolute;
 	left: 50%;
+}
+a:hover {
+	color: rgba(255, 255, 255, 0.7);
 }

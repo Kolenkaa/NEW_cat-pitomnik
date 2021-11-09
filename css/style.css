@@ -6,24 +6,24 @@
 *,
 *::before,
 *::after {
-	padding: 0;
-	margin: 0;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul,
 ol,
 li {
-	list-style: none;
+  list-style: none;
 }
 
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
 
 h1,
@@ -32,64 +32,63 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: inherit;
-	font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 html,
 body {
-	height: 100%;
-	line-height: 1;
-	font-size: 16px;
-	color: #ffffff;
-	font-weight: 400;
-	font-family: Roboto;
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: Roboto;
 }
 
 /*--------------------------------*/
 .container {
-	max-width: 1366px;
-	width: 100%;
-	margin: 0px auto;
+  max-width: 1366px;
+  width: 100%;
+  margin: 0px auto;
 }
 
-/*----------------------------------*/
 header {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	position: relative;
-	padding-top: 52px;
-	padding-bottom: 52px;
-	background-color: #181617;
-}
-
-.navigation_list {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  background-color: #181617;
 }
 
 .navigation_list > li:not(:first-child) {
-	margin-left: 40px;
+  margin-left: 40px;
 }
 
-.navigation_link {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	color: rgba(255, 255, 255, 0.2);
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.-active {
-	color: #ffffff;
+.navigation__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.2);
 }
 
-a:hover {
-	color: rgba(255, 255, 255, 0.7);
+.navigation__link-active {
+  color: #ffffff;
 }
 
 .logo {
-	position: absolute;
-	left: 50%;
+  position: absolute;
+  left: 50%;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
