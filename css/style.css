@@ -63,10 +63,6 @@ header {
   background-color: #181617;
 }
 
-.navigation_list > li:not(:first-child) {
-  margin-left: 40px;
-}
-
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,6 +78,10 @@ header {
 
 .navigation__link-active {
   color: #ffffff;
+}
+
+.navigation__list > li:not(:first-child) {
+  margin-left: 40px;
 }
 
 .logo {
