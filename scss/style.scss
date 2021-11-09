@@ -47,9 +47,11 @@ body {
 /*--------------------------------*/
 
 .container {
-	max-width: 1366px;
+	max-width: (1366px+2 * 40px);
 	width: 100%;
 	margin: 0px auto;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 header {
@@ -84,6 +86,7 @@ header {
 .logo {
 	position: absolute;
 	left: 50%;
+	transform: translate(-50%, 0);
 }
 a:hover {
 	color: rgba(255, 255, 255, 0.7);
