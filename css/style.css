@@ -118,28 +118,66 @@ a:hover {
     position: absolute;
     width: 26px;
     height: 18px;
+    -webkit-transform: translate(1050%, 0);
+            transform: translate(1050%, 0);
   }
   .burger span {
     position: absolute;
     background-color: #70573d;
-    right: 0;
     width: 100%;
     height: 2px;
-    top: 7.5px;
+    top: -5px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
   }
   .burger::before,
   .burger::after {
-    content: '';
+    content: "";
     position: absolute;
     background-color: #70573d;
     width: 100%;
     height: 2px;
-    right: 0;
+    top: -10px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
   }
   .burger::before {
     top: 0px;
   }
   .burger::after {
     bottom: 0px;
+  }
+  .burger.active span {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .burger.active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: -9px;
+  }
+  .burger.active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .menu {
+    top: -20%;
+    position: absolute;
+    -webkit-transform: translate(-8%, 0);
+            transform: translate(-8%, 0);
+  }
+  .menu.active {
+    padding: 90px 0px 0px 0px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    top: 35px;
+  }
+  .navigation__link {
+    position: relative;
   }
 }
