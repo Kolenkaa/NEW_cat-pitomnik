@@ -84,6 +84,10 @@ header {
 	margin-left: 40px;
 }
 
+/*--.burger {
+	display: none;
+}--*/
+
 .logo {
 	position: absolute;
 	left: 50%;
@@ -94,16 +98,50 @@ a:hover {
 }
 
 /*---------------*/
-@media (max-width: 768px) {
+/*--@media (max-width: 768px) {
 	.navigation__link {
 		font-style: normal;
 		font-weight: 500;
 		font-size: 15px;
 		line-height: 18px;
 	}
+	.logo {
+	//???	///как уменьшить лого?	
+	}
 }
 @media (max-width: 320px) {
-	.burger {}
-
+	.burger {
+		display: block;
+		position: absolute;
+		width: 26px;
+		height: 18px;
+		//overflow: hidden;
+		//transform: translate(700%, 0);
 	}
-
+	.burger span {
+		position: absolute;
+		background-color: #70573d;
+		right: 0;
+		width: 100%;
+		height: 2px;
+		top: 7.5px;
+	}
+	.burger::before, 
+	.burger::after {
+		content: '';//?? что это
+		position: absolute;
+		background-color: #70573d;
+		width: 100%;
+		height: 2px;
+		right: 0;
+	}
+	.burger::before {
+		top: 0px;
+	}
+	.burger::after {
+		bottom: 0px;
+	}
+	.menu {
+		
+	}
+}*--/
