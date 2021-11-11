@@ -110,6 +110,9 @@ a:hover {
     font-size: 15px;
     line-height: 18px;
   }
+  .logo {
+    height: 100%;
+  }
 }
 
 @media (max-width: 320px) {
