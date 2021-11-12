@@ -56,11 +56,13 @@ body {
 }
 
 @media (max-width: 768px) {
-  max-width: calc(1366px+2 * 20px);
-  width: 100%;
-  margin: 0px auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  .container {
+    max-width: calc(1366px+2 * 20px);
+    width: 100%;
+    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 header {
@@ -192,4 +194,65 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+/*----------------------------------*/
+.hero__container {
+  position: relative;
+  background-color: #181617;
+}
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0px auto;
+}
+
+.text__city {
+  font-style: normal;
+  line-height: 24px;
+  color: #a07b50;
+}
+
+.text__title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-size: 52px;
+  line-height: 60px;
+}
+
+.text__area {
+  font-style: normal;
+  line-height: 24px;
+  color: #a07b50;
+}
+
+.text__btn {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  border: 0.5px solid #a07b50;
+  padding: 16px 36px;
+}
+
+.social__media {
+  margin-left: 89px;
+}
+
+.vector {
+  border-left: 0.5px solid rgba(255, 255, 255, 0.61);
+  height: 78px;
+  width: 1px;
 }

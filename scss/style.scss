@@ -55,11 +55,13 @@ body {
 }
 
 @media (max-width: 768px) {
-	max-width: calc(1366px+2 * 20px);
-	width: 100%;
-	margin: 0px auto;
-	padding-left: 20px;
-	padding-right: 20px;
+	.container {
+		max-width: calc(1366px+2 * 20px);
+		width: 100%;
+		margin: 0px auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 header {
@@ -185,3 +187,73 @@ a:hover {
 		display: flex;
 	}
 }
+/*----------------------------------*/
+.hero {
+	&__container {
+		position: relative;
+		background-color: #181617;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin: 0px auto;
+	}
+
+	&__content-text {
+	}
+}
+.text {
+	&__city {
+		font-style: normal;
+		line-height: 24px;
+		color: #a07b50;
+	}
+
+	&__title {
+		font-family: Yeseva One;
+		font-style: normal;
+		font-size: 52px;
+		line-height: 60px;
+	}
+
+	&__area {
+		font-style: normal;
+		line-height: 24px;
+		color: #a07b50;
+	}
+
+	&__btn {
+		display: block;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+		color: #ffffff;
+
+		border: 0.5px solid #a07b50; 
+		padding: 16px 36px; 
+	}
+}
+.cat-logo {
+}
+.social {
+	
+	&__media {
+		margin-left: 89px;
+	}
+
+	&__icons {
+	}
+}
+
+.vector {
+   border-left: 0.5px solid rgba(255, 255, 255, 0.61);
+   height: 78px;
+	width: 1px;
+	
+	
+}
+
