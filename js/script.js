@@ -1,6 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
-	document.querySelector('.burger').onclick = function (event) {
-		document.querySelector('.burger').classList.toggle('active');
-		document.querySelector('.menu').classList.toggle('active');
-	}
-})
+document.addEventListener("DOMContentLoaded", function () {
+  const burger = document.querySelector(".burger");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  burger.onclick = function (event) {
+    burger.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
+  };
+});
