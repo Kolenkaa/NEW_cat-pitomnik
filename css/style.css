@@ -196,24 +196,16 @@ a:hover {
   }
 }
 
-/*----------------------------------*/
+/*---------------hero-------------------*/
 .hero__container {
   position: relative;
   background-color: #181617;
+  height: 100%;
 }
 
 .hero__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 0px auto;
+  margin-left: 13%;
+  padding: 90px 0px 30px 30px;
 }
 
 .text__city {
@@ -227,32 +219,50 @@ a:hover {
   font-style: normal;
   font-size: 52px;
   line-height: 60px;
+  margin: 20px 0px;
 }
 
 .text__area {
   font-style: normal;
   line-height: 24px;
   color: #a07b50;
+  margin-bottom: 45px;
 }
 
-.text__btn {
-  display: block;
+button {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   color: #ffffff;
+  background-color: #181617;
   border: 0.5px solid #a07b50;
   padding: 16px 36px;
 }
 
 .social__media {
-  margin-left: 89px;
+  position: relative;
+  padding-bottom: 63px;
+  margin-left: 6.5%;
+  text-align: center;
 }
 
-.vector {
-  border-left: 0.5px solid rgba(255, 255, 255, 0.61);
+.social__icons {
+  width: 16px;
+}
+
+.social__icons > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.social__icons::before {
+  content: "";
+  width: 0.5px;
   height: 78px;
-  width: 1px;
+  background: rgba(255, 255, 255, 0.61);
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 31px;
+  margin-left: -0.25px;
 }

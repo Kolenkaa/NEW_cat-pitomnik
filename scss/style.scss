@@ -187,21 +187,17 @@ a:hover {
 		display: flex;
 	}
 }
-/*----------------------------------*/
+/*---------------hero-------------------*/
 .hero {
 	&__container {
 		position: relative;
 		background-color: #181617;
+		height: 100%;
 	}
 
 	&__content {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		margin: 0px auto;
-	}
-
-	&__content-text {
+		margin-left: 13%;
+		padding: 90px 0px 30px 30px;//???
 	}
 }
 .text {
@@ -216,44 +212,60 @@ a:hover {
 		font-style: normal;
 		font-size: 52px;
 		line-height: 60px;
+		margin: 20px 0px;
 	}
 
 	&__area {
 		font-style: normal;
 		line-height: 24px;
 		color: #a07b50;
+		margin-bottom: 45px;
 	}
-
-	&__btn {
-		display: block;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 14px;
-		line-height: 16px;
-		text-align: center;
-		color: #ffffff;
-
-		border: 0.5px solid #a07b50; 
-		padding: 16px 36px; 
-	}
+}
+button {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #181617;
+	border: 0.5px solid #a07b50;
+	padding: 16px 36px;
 }
 .cat-logo {
+	//background-image: url("../images/cover.png");
+	//background-size: 1068px 712px;
+	//background-position: right top;
+	//background-repeat: no-repeat;
+	//position: absolute;
+	//width: 1068px;
+	//height: 712px;
+	//left: 300px;
+	//top: -180px;
 }
 .social {
-	
 	&__media {
-		margin-left: 89px;
+		position: relative;
+		padding-bottom: 63px;
+		margin-left: 6.5%;
+		text-align: center; //???
 	}
-
 	&__icons {
+		width: 16px;
 	}
 }
 
-.vector {
-   border-left: 0.5px solid rgba(255, 255, 255, 0.61);
-   height: 78px;
-	width: 1px;
-	
-	
+.social__icons > li:not(:last-child) {
+	margin-bottom: 10px;
 }
-
+.social__icons::before {
+	content: "";
+	width: 0.5px;
+	height: 78px;
+	background: rgba(255, 255, 255, 0.61);
+	position: absolute;
+	bottom: 100%;
+	margin-bottom: 31px;
+	margin-left: -0.25px; //???
+}
