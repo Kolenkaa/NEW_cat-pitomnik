@@ -208,6 +208,18 @@ a:hover {
   padding: 90px 0px 30px 30px;
 }
 
+.hero__container::after {
+  content: '';
+  position: absolute;
+  background-image: url("../images/cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 712px;
+  width: 1068px;
+  right: -29px;
+  top: -134px;
+}
+
 .text__city {
   font-style: normal;
   line-height: 24px;
