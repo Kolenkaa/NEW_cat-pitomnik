@@ -46,7 +46,7 @@ body {
   font-family: Roboto;
 }
 
-/*--------------------------------*/
+/*--HEADER, WRAPPER, CONTAINER------------------------------*/
 header {
   position: relative;
   overflow: hidden;
@@ -59,6 +59,16 @@ header .wrapper {
   padding-top: 52px;
   padding-bottom: 52px;
   margin: 0px auto;
+}
+
+@media (max-width: 767px) {
+  header .wrapper {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 .container {
@@ -80,19 +90,29 @@ header .wrapper {
 @media (max-width: 1365px) {
   .container {
     width: 100%;
-    margin: 0px auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 41px;
+    padding-right: 41px;
   }
 }
 
+@media (max-width: 767px) {
+  .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*-------------MENU AND BURGER----------------------------------*/
 .mobile-menu {
   display: none;
   background-color: #181617;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 10px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -173,8 +193,8 @@ a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/*---------------*/
-@media (max-width: 768px) {
+/*-------------MENU AND BURGER < 767px --------------------------------*/
+@media (max-width: 767px) {
   .navigation__link {
     font-style: normal;
     font-weight: 500;
@@ -191,25 +211,16 @@ a:hover {
   nav.menu {
     display: none;
   }
-  header .wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .menu.active {
-    padding: 40px 0px 0px 0px;
-    position: relative;
-  }
   .mobile-menu.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 30px;
+    margin-bottom: -20px;
   }
 }
 
-/*---------------hero-------------------*/
+/*---------------HERO-------------------*/
 .hero {
   background-color: #181617;
   position: relative;
@@ -230,10 +241,10 @@ a:hover {
 }
 
 .hero__description {
-  margin-top: 16px;
+  margin-top: 30px;
 }
 
-.hero button {
+button {
   margin-top: 48px;
   font-weight: 700;
   font-size: 14px;
@@ -257,8 +268,8 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  top: 280px;
   left: -100px;
-  bottom: -100px;
   padding: 0;
 }
 
@@ -290,6 +301,7 @@ a:hover {
   bottom: 0;
 }
 
+/*-----------HERO < 1365px---------------------------*/
 @media (max-width: 1365px) {
   .hero__social-media {
     position: absolute;
@@ -300,8 +312,8 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    left: 21px;
-    bottom: -100px;
+    top: 400px;
+    left: 41px;
   }
   .hero__social-media > li:first-child {
     margin-top: 0px;
@@ -313,9 +325,6 @@ a:hover {
   .hero__social-media::before {
     display: none;
   }
-}
-
-@media (max-width: 1365px) {
   .hero:before {
     position: absolute;
     background-image: url(../images/cover.png);
@@ -323,5 +332,56 @@ a:hover {
     background-size: contain;
     height: 533px;
     right: -670px;
+  }
+}
+
+/*-----------HERO < 767px----------------------------*/
+@media (max-width: 767px) {
+  .burger {
+    display: block;
+    position: absolute;
+    right: 24px;
+  }
+  .hero {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 280px;
+  }
+  .hero__subTitle, .hero__description {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    color: #a07b50;
+  }
+  .hero__title {
+    margin-top: 16px;
+    font-family: Yeseva One;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .hero__description {
+    margin-top: 16px;
+  }
+  .hero button {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #181617;
+    border: 0.5px solid #a07b50;
+    padding: 15px 16px;
+  }
+  .hero__social-media {
+    display: none;
+  }
+  .hero:before {
+    position: absolute;
+    background-image: url(../images/cover.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 275px;
+    right: -970px;
   }
 }
