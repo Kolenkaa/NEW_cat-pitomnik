@@ -62,7 +62,7 @@
 					Первый питомник с расширенным<br />
 					спектром услуг
 				</p>
-				<button>Смотреть котиков</button>
+				<button class="btn hero__btn">Смотреть котиков</button>
 				<ul class="hero__social-media">
 					<li>
 						<a href="#"><img src="./images/VK.svg" alt="vcontakte" /></a>
@@ -96,17 +96,21 @@
 				</ul>
 				<div class="pets__slider">
 					<div class="pets__photo">
-						<button class="pets__arrow pets__arrow-left"></button>
+						<button class="pets__slider-button pets__slider-button--left">
+							<img src="/images/pets/arrow/arrow__left.svg" alt="arrow left" />
+						</button>
 						<img class="pets__photo-right" src="images/pets/first_cat.png" width="517" height="214"
 							alt="кот белого окраса">
 						<img class="pets__photo-center" src="images/pets/second_cat.png" width="471" height="485"
 							alt="кот пепельного краса">
 						<img class="pets__photo-left" src="images/pets/third_cat.png" width="517" height="214"
 							alt="кот коричневого окраса">
-						<button class="pets__arrow pets__arrow-right"></button>
+						<button class="pets__slider-button pets__slider-button--right">
+							<img src="/images/pets/arrow/arrow__right.svg" alt="arrow right" />
+						</button>
 					</div>
 				</div>
-				<button class="pets__button">Смотреть больше</button>
+				<button class="btn pets__btn">Смотреть больше</button>
 			</div>
 		</section>
 		<!-- FEATURES Section -->
@@ -123,6 +127,33 @@
 					<div class="features__description">Вес может достигать 12 кг, а длина 1 м</div>
 				</div>
 			</div>
+		</section>
+		<!-- ABOUT Section -->
+		<section class="about">
+			<div class="container">
+				<h2 class="about__title">Почему именно мы?</h2>
+				<p class="about__text">Приобретая животное в нашем питомнике, вы получите</p>
+			</div>
+			<ul class="abot__list">
+				<li class="abot__item">
+					<div class="about__block">
+						<img src="/images/about/animal_doctor.svg" alt="">
+						<p class="about__description"> Бесплатное ветеринарное обслуживание 5 лет</p>
+					</div>
+				</li>
+				<li class="abot__item">
+					<div class="about__block">
+						<img src="/images/about/consultation.svg" alt="">
+						<p class="about__description">Консультирование по любому вопросу 24 часа в сутки</p>
+					</div>
+				</li>
+				<li class="abot__item">
+					<div class="about__block">
+						<img src="/images/about/eat.svg" alt="">
+						<p class="about__description">Индивидуальный подбор питания для вашего кота</p>
+					</div>
+				</li>
+			</ul>
 		</section>
 	</main>
 	<footer></footer>

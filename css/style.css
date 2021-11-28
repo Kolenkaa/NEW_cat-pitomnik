@@ -46,6 +46,25 @@ body {
   font-family: Roboto;
 }
 
+.btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #181617;
+  border: 0.5px solid #a07b50;
+  padding: 16px 36px;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 15px 16px;
+  }
+}
+
 /*--HEADER, WRAPPER, CONTAINER------------------------------*/
 header {
   position: relative;
@@ -246,16 +265,8 @@ a:hover {
   margin-top: 30px;
 }
 
-button {
+.hero__btn {
   margin-top: 48px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #181617;
-  border: 0.5px solid #a07b50;
-  padding: 16px 36px;
 }
 
 .hero__social-media {
@@ -364,16 +375,8 @@ button {
   .hero__description {
     margin-top: 16px;
   }
-  .hero button {
+  .hero__btn {
     margin-top: 40px;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #181617;
-    border: 0.5px solid #a07b50;
-    padding: 15px 16px;
   }
   .hero__social-media {
     display: none;
@@ -434,18 +437,32 @@ button {
   color: #ffffff;
 }
 
-.pets__button {
-  margin: 0px auto;
-  margin-top: 55px;
-  background-color: transparent;
+.pets__btn {
+  margin: 55px auto 0;
+  background: #1f1c1d;
 }
 
 .pets__list > li:not(:first-child) {
   margin-left: 45px;
 }
 
-.pets__arrow {
+.pets__slider-button {
   display: none;
+  cursor: pointer;
+  position: absolute;
+  border: 0;
+  background: transparent;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.pets__slider-button--left {
+  left: 0;
+}
+
+.pets__slider-button--right {
+  right: 0;
 }
 
 .pets__photo {
@@ -479,20 +496,8 @@ button.pets__arrow:hover {
     height: 485px;
     margin: 0 auto;
   }
-  .pets__arrow {
+  .pets .pets__slider-button {
     display: block;
-    position: absolute;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .pets__arrow-left {
-    position: absolute;
-    left: 0;
-    background-image: url(../images/pets/arrow/arrow__left.png);
   }
   .pets__photo {
     position: relative;
@@ -522,12 +527,6 @@ button.pets__arrow:hover {
     -webkit-transform: translate(-10%, -185%);
             transform: translate(-10%, -185%);
   }
-  .pets__arrow-right {
-    position: absolute;
-    right: 0;
-    background-image: url(../images/pets/arrow/arrow__right.png);
-    background-position: right;
-  }
 }
 
 /*-------------- PETS < 767px ------------------------*/
@@ -555,10 +554,6 @@ button.pets__arrow:hover {
     min-width: 284px;
     max-width: 380px;
     height: 248px;
-  }
-  .pets__arrow {
-    height: 18px;
-    padding: 9px 4px;
   }
   .pets__photo-center {
     width: 234px;
@@ -766,6 +761,7 @@ button.pets__arrow:hover {
   .features__title {
     font-size: 28px;
     line-height: 32px;
+    text-align: center;
   }
   .features__text {
     max-width: 315px;
@@ -839,4 +835,76 @@ button.pets__arrow:hover {
   .features__description:not(:first-child) {
     margin-top: 30px;
   }
+}
+
+/*-------------------ABOUT------------------------*/
+.about {
+  position: relative;
+  background: #151313;
+  padding-top: 90px;
+}
+
+.about__title {
+  font-family: Yeseva One;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0px auto;
+}
+
+.about__text {
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #a07b50;
+  margin: 35px auto 55px;
+}
+
+.abot__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.abot__item {
+  background: #1f1c1d;
+  padding: 20px;
+}
+
+.about__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 320px;
+  height: 260px;
+}
+
+.about__description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about .about__block:hover {
+  background: #a07b50;
 }
