@@ -917,3 +917,51 @@ button.pets__arrow:hover {
   fill: #ffffff;
   stroke: #a07b50;
 }
+
+/*-------------------ABOUT < 1365px ------------------------*/
+@media (max-width: 1365px) {
+  .about__list {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .about__list > li:not(:first-child) {
+    margin-left: 0px;
+    margin-top: 35px;
+  }
+}
+
+/*-------------------ABOUT < 767px------------------------*/
+@media (max-width: 767px) {
+  .about {
+    padding-top: 75px;
+  }
+  .about__title {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .about__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 35px auto 40px;
+  }
+  .about__list {
+    padding-bottom: 60px;
+  }
+  .about__item {
+    padding: 15px;
+  }
+  .about__list > li:not(:first-child) {
+    margin-top: 30px;
+  }
+  .about__block {
+    width: 230px;
+    height: 218px;
+  }
+  .about__description {
+    font-size: 14px;
+    line-height: 20px;
+    width: 210px;
+  }
+}
