@@ -1003,9 +1003,9 @@ button.pets__arrow:hover {
 		background-color: #181617;
 		.care__arrow {
 			background-color: #181617;
-			border-left: 0.5px solid #a07b50; 
+			border-left: 0.5px solid #a07b50;
 		}
-	}               //??
+	} //??
 
 	&__subtitle {
 		font-weight: 700;
@@ -1022,14 +1022,14 @@ button.pets__arrow:hover {
 		color: #ffffff;
 		margin-top: 15px;
 	}
-}
 
-.care__arrow {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 60px;
-	height: 100%;
-	content: "";
-	background: #a07b50 url(../images/care/Vector.svg) no-repeat 50% 50%;
+	&__arrow {
+		position: absolute;
+		content: "";
+		top: 0;
+		right: 0;
+		width: 60px;
+		height: 100%;
+		background: #a07b50 url(../images/care/Vector.svg) no-repeat 50% 50%;
+	}
 }

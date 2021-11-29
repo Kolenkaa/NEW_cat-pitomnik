@@ -1040,10 +1040,10 @@ button.pets__arrow:hover {
 
 .care__arrow {
   position: absolute;
+  content: "";
   top: 0;
   right: 0;
   width: 60px;
   height: 100%;
-  content: "";
   background: #a07b50 url(../images/care/Vector.svg) no-repeat 50% 50%;
 }
