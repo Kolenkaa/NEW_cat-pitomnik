@@ -965,3 +965,85 @@ button.pets__arrow:hover {
     width: 210px;
   }
 }
+
+/*-------------------CARE------------------------*/
+.care {
+  position: absolute;
+  background-image: url(../images/care/care_cat.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.care__title {
+  font-family: Yeseva One;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0px auto;
+  padding-top: 100px;
+}
+
+.care__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1150px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  margin-top: 55px;
+}
+
+.care__item {
+  position: relative;
+  cursor: pointer;
+  border: 0.5px solid #a07b50;
+  padding: 35px 100px 40px 60px;
+}
+
+.care__item:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.care__item:nth-child(-n + 2) {
+  margin-bottom: 25px;
+}
+
+.care__item:hover {
+  background-color: #181617;
+}
+
+.care__item:hover .care__arrow {
+  background-color: #181617;
+  border-left: 0.5px solid #a07b50;
+}
+
+.care__subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #a07b50;
+}
+
+.care__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  width: 390px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.care__arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  content: "";
+  background: #a07b50 url(../images/care/Vector.svg) no-repeat 50% 50%;
+}
