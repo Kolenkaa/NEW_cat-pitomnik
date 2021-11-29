@@ -842,6 +842,7 @@ button.pets__arrow:hover {
   position: relative;
   background: #151313;
   padding-top: 90px;
+  padding-bottom: 100px;
 }
 
 .about__title {
@@ -870,7 +871,6 @@ button.pets__arrow:hover {
           justify-content: center;
   max-width: 1150px;
   margin: 0 auto;
-  padding-bottom: 100px;
 }
 
 .about__list > li:not(:first-child) {
@@ -934,6 +934,7 @@ button.pets__arrow:hover {
 @media (max-width: 767px) {
   .about {
     padding-top: 75px;
+    padding-bottom: 60px;
   }
   .about__title {
     font-size: 28px;
@@ -945,9 +946,6 @@ button.pets__arrow:hover {
     font-size: 14px;
     line-height: 20px;
     margin: 35px auto 40px;
-  }
-  .about__list {
-    padding-bottom: 60px;
   }
   .about__item {
     padding: 15px;
@@ -971,8 +969,11 @@ button.pets__arrow:hover {
   position: absolute;
   background-image: url(../images/care/care_cat.png);
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-size: cover;
   width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .care__title {
@@ -980,7 +981,6 @@ button.pets__arrow:hover {
   font-size: 36px;
   line-height: 42px;
   margin: 0px auto;
-  padding-top: 100px;
 }
 
 .care__list {
@@ -993,9 +993,7 @@ button.pets__arrow:hover {
       -ms-flex-pack: center;
           justify-content: center;
   width: 1150px;
-  margin: 0 auto;
-  padding-bottom: 100px;
-  margin-top: 55px;
+  margin: 55px auto 0;
 }
 
 .care__item {
@@ -1051,7 +1049,7 @@ button.pets__arrow:hover {
 
 /*-------------------CARE < 1365px ------------------------*/
 @media (max-width: 1365px) {
-  .care__title {
+  .care {
     padding-top: 90px;
   }
   .care__list {
@@ -1076,16 +1074,18 @@ button.pets__arrow:hover {
 
 /*-------------------CARE < 767px ------------------------*/
 @media (max-width: 767px) {
+  .care {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .care__title {
     font-size: 28px;
     line-height: 32px;
     text-align: center;
-    padding-top: 60px;
   }
   .care__list {
     max-width: 290px;
     margin-top: 40px;
-    padding-bottom: 60px;
   }
   .care__item {
     padding: 20px 60px 20px 20px;

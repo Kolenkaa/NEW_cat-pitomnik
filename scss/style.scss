@@ -831,6 +831,7 @@ button.pets__arrow:hover {
 	position: relative;
 	background: #151313;
 	padding-top: 90px;
+	padding-bottom: 100px;
 
 	&__title {
 		font-family: Yeseva One;
@@ -854,7 +855,6 @@ button.pets__arrow:hover {
 		justify-content: center;
 		max-width: 1150px;
 		margin: 0 auto;
-		padding-bottom: 100px;
 	}
 
 	&__list > li:not(:first-child) {
@@ -914,6 +914,7 @@ button.pets__arrow:hover {
 @media (max-width: 767px) {
 	.about {
 		padding-top: 75px;
+		padding-bottom: 60px;
 
 		&__title {
 			font-size: 28px;
@@ -930,10 +931,6 @@ button.pets__arrow:hover {
 	}
 
 	.about {
-		&__list {
-			padding-bottom: 60px;
-		}
-
 		&__item {
 			padding: 15px;
 		}
@@ -963,15 +960,17 @@ button.pets__arrow:hover {
 	position: absolute;
 	background-image: url(../images/care/care_cat.png);
 	background-repeat: no-repeat;
+	background-position: 50% 50%;
 	background-size: cover;
 	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
 
 	&__title {
 		font-family: Yeseva One;
 		font-size: 36px;
 		line-height: 42px;
 		margin: 0px auto;
-		padding-top: 100px;
 	}
 
 	&__list {
@@ -979,11 +978,7 @@ button.pets__arrow:hover {
 		flex-wrap: wrap;
 		justify-content: center;
 		width: 1150px;
-		margin: 0 auto;
-
-		padding-bottom: 100px;
-
-		margin-top: 55px;
+		margin: 55px auto 0;
 	}
 
 	&__item {
@@ -1038,9 +1033,7 @@ button.pets__arrow:hover {
 /*-------------------CARE < 1365px ------------------------*/
 @media (max-width: 1365px) {
 	.care {
-		&__title {
-			padding-top: 90px;
-		}
+		padding-top: 90px;
 
 		&__list {
 			max-width: 560px;
@@ -1067,18 +1060,18 @@ button.pets__arrow:hover {
 /*-------------------CARE < 767px ------------------------*/
 @media (max-width: 767px) {
 	.care {
+		padding-top: 60px;
+		padding-bottom: 60px;
+
 		&__title {
 			font-size: 28px;
 			line-height: 32px;
 			text-align: center;
-			padding-top: 60px;
 		}
 
 		&__list {
-			//margin: 0 auto;
 			max-width: 290px;
 			margin-top: 40px;
-			padding-bottom: 60px;
 		}
 
 		&__item {
