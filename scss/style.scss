@@ -847,7 +847,7 @@ button.pets__arrow:hover {
 		margin: 35px auto 55px;
 	}
 }
-.abot {
+.about {
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
@@ -857,6 +857,9 @@ button.pets__arrow:hover {
 		padding-bottom: 100px;
 	}
 
+	&__list > li:not(:first-child) {
+		margin-left: 35px;
+	}
 
 	&__item {
 		background: #1f1c1d;
@@ -868,7 +871,7 @@ button.pets__arrow:hover {
 	&__block {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
 		cursor: pointer;
 		width: 320px;
@@ -881,8 +884,14 @@ button.pets__arrow:hover {
 		line-height: 26px;
 		text-align: center;
 		color: #ffffff;
+		width: 250px;
 	}
 	.about__block:hover {
 		background: #a07b50;
 	}
+}
+
+.about__block:hover svg {
+	fill: #ffffff;
+	stroke: #a07b50;
 }

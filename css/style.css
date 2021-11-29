@@ -859,7 +859,7 @@ button.pets__arrow:hover {
   margin: 35px auto 55px;
 }
 
-.abot__list {
+.about__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,7 +873,11 @@ button.pets__arrow:hover {
   padding-bottom: 100px;
 }
 
-.abot__item {
+.about__list > li:not(:first-child) {
+  margin-left: 35px;
+}
+
+.about__item {
   background: #1f1c1d;
   padding: 20px;
 }
@@ -886,9 +890,8 @@ button.pets__arrow:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -903,8 +906,14 @@ button.pets__arrow:hover {
   line-height: 26px;
   text-align: center;
   color: #ffffff;
+  width: 250px;
 }
 
 .about .about__block:hover {
   background: #a07b50;
+}
+
+.about__block:hover svg {
+  fill: #ffffff;
+  stroke: #a07b50;
 }
