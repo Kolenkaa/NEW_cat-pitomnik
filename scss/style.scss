@@ -569,7 +569,6 @@ button.pets__arrow:hover {
 	}
 
 	&__cat {
-		width: 602px;
 		margin: 0 auto;
 		position: relative;
 		z-index: 1;
@@ -598,6 +597,10 @@ button.pets__arrow:hover {
 			border: 1px solid #a07b50;
 		}
 	}
+}
+
+.features__mobile-list {
+	display: none;
 }
 
 .features__description {
@@ -665,9 +668,9 @@ button.pets__arrow:hover {
 		}
 
 		&__cat {
-			width: 400px;
+			display: flex;
 			transform: translate(5%);
-
+		
 			img {
 				width: 400px;
 			}
@@ -749,7 +752,7 @@ button.pets__arrow:hover {
 		}
 
 		&__cat {
-			width: 278px;
+			display: flex;
 
 			img {
 				width: 267px;
@@ -771,12 +774,18 @@ button.pets__arrow:hover {
 		}
 	}
 
+	.features__mobile-list {
+		display: block;
+		line-height: 20px;
+		font-size: 14px;
+		max-width: 400px;
+	}
+
 	.features__description {
+		display: none;
 		width: 100%;
 		max-width: 400px;
 		position: relative;
-		line-height: 20px;
-		font-size: 14px;
 
 		&:nth-of-type(1) {
 			top: -15px;
@@ -1001,7 +1010,7 @@ button.pets__arrow:hover {
 			background-color: #181617;
 			border-left: 0.5px solid #a07b50;
 		}
-	} //??
+	}
 
 	&__subtitle {
 		font-weight: 700;

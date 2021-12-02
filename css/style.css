@@ -595,7 +595,6 @@ button.pets__arrow:hover {
 }
 
 .features__cat {
-  width: 602px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -623,6 +622,10 @@ button.pets__arrow:hover {
   width: 631px;
   height: 631px;
   border: 1px solid #a07b50;
+}
+
+.features__mobile-list {
+  display: none;
 }
 
 .features__description {
@@ -694,7 +697,9 @@ button.pets__arrow:hover {
     max-width: 500px;
   }
   .features__cat {
-    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-transform: translate(5%);
             transform: translate(5%);
   }
@@ -769,7 +774,9 @@ button.pets__arrow:hover {
     line-height: 20px;
   }
   .features__cat {
-    width: 278px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .features__cat img {
     width: 267px;
@@ -786,12 +793,17 @@ button.pets__arrow:hover {
     width: 280px;
     height: 280px;
   }
+  .features__mobile-list {
+    display: block;
+    line-height: 20px;
+    font-size: 14px;
+    max-width: 400px;
+  }
   .features__description {
+    display: none;
     width: 100%;
     max-width: 400px;
     position: relative;
-    line-height: 20px;
-    font-size: 14px;
   }
   .features__description:nth-of-type(1) {
     top: -15px;
