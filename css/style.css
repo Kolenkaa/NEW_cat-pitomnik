@@ -762,6 +762,7 @@ button.pets__arrow:hover {
 @media (max-width: 767px) {
   .features {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   .features__title {
     font-size: 28px;
@@ -797,54 +798,22 @@ button.pets__arrow:hover {
     display: block;
     line-height: 20px;
     font-size: 14px;
-    max-width: 400px;
+    max-width: 260px;
+  }
+  .features__mobile-item::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #a07b50;
+    border-radius: 50%;
+    -webkit-transform: translate(-15px, 5px);
+            transform: translate(-15px, 5px);
   }
   .features__description {
     display: none;
-    width: 100%;
-    max-width: 400px;
-    position: relative;
   }
-  .features__description:nth-of-type(1) {
-    top: -15px;
-    left: 10px;
-    max-width: 250px;
-    text-align: left;
-  }
-  .features__description:nth-of-type(2) {
-    top: -20px;
-    left: 10px;
-    max-width: 180px;
-    text-align: left;
-  }
-  .features__description:nth-of-type(3) {
-    top: -25px;
-    right: -10px;
-    max-width: 180px;
-  }
-  .features__description:nth-of-type(4) {
-    top: -30px;
-    right: -10px;
-    max-width: 260px;
-    padding-bottom: 60px;
-  }
-  .features__description:nth-of-type(1)::before {
-    top: 0px;
-    left: -25px;
-  }
-  .features__description:nth-of-type(2)::before {
-    top: 0px;
-    left: -25px;
-  }
-  .features__description:nth-of-type(3)::before {
-    top: 0px;
-    right: 190px;
-  }
-  .features__description:nth-of-type(4)::before {
-    top: 0px;
-    right: 270px;
-  }
-  .features__description:not(:first-child) {
+  .features__mobile-item:not(:first-child) {
     margin-top: 30px;
   }
 }
