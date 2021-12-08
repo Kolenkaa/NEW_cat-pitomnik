@@ -1094,10 +1094,14 @@ button.pets__arrow:hover {
 }
 
 .team__photo-inner {
+  position: relative;
   width: 300%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  left: 0;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .team__photo-second {
@@ -1162,4 +1166,17 @@ button.pets__arrow:hover {
 }
 
 /*-------------------TEAM < 1365px ------------------------*/
+@media (max-width: 1365px) {
+  .team__photo img {
+    width: 207px;
+    height: 209px;
+  }
+}
+
 /*-------------------TEAM < 767px ------------------------*/
+@media (max-width: 767px) {
+  .team__photo img {
+    width: 126px;
+    height: 126px;
+  }
+}
