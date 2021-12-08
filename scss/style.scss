@@ -1151,3 +1151,130 @@ button.pets__arrow:hover {
 		}
 	}
 }
+
+/*------------------QUESTION ----------------------------------*/
+
+.question {
+	background: #1f1c1d;
+	padding-top: 75px;
+
+	&__title {
+		font-family: Yeseva One;
+		font-size: 36px;
+		line-height: 42px;
+		margin: 0px auto;
+		text-align: center;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 25px;
+		color: #a07b50;
+		margin: 25px auto 55px;
+		text-align: center;
+	}
+
+	&__list {
+		width: 800px;
+		margin: 0 auto;
+		counter-reset: num;
+	}
+	&__item {
+		position: relative;
+	}
+	&__item::before {
+		position: absolute;
+		content: "0" counter(num);
+		counter-increment: num;
+		left: -100px;
+		font-weight: 700;
+		font-size: 70px;
+		line-height: 82px;
+		color: #a07b50;
+	}
+
+	ol > li:not(:last-child) {
+		margin-bottom: 35px;
+	}
+
+	&__click {
+		display: flex;
+		align-items: center;
+		position: relative;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 19px;
+		color: #ddd0c3;
+		text-align: start;
+		padding: 35px 200px 35px 40px;
+		width: 100%;
+		background-color: transparent;
+		border: 0.5px solid #a07b50;
+		cursor: pointer;
+	}
+
+	&__button {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 104px;
+		border-left: 0.5px solid #a07b50;
+		cursor: pointer;
+	}
+
+	&__button::before {
+		width: 2px;
+		height: 18px;
+	}
+	&__button::after {
+		width: 18px;
+		height: 2px;
+	}
+	&__button::before,
+	&__button::after {
+		position: absolute;
+		content: "";
+		transform: translate(-50%, -50%);
+		background-color: #a07b50;
+		top: 50%;
+		left: 50%;
+	}
+	
+	.question__click:focus .question__button:after,
+	.question__click:focus .question__button:before,
+	.question__click:hover .question__button:after,
+	.question__click:hover .question__button:before {
+		background-color: #fff;
+	}
+
+	.question__click:focus .question__button, 
+	.question__click:hover .question__button {
+		background-color: #a07b50;
+	}
+
+	&__answer {
+	}
+
+	&__answer-inner {
+		padding: 35px 200px 35px 40px;
+		border: 0.5px solid #a07b50;
+	}
+
+	&__description-part1,
+	&__description-part2 {
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 25px;
+		color: #ddd0c3;
+	}
+
+	&__description-part1 {
+		margin-bottom: 20px;
+	}
+
+	&__btn {
+		margin: 35px 120px 35px auto;
+		background: #1f1c1d;
+	}
+}

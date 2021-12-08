@@ -1180,3 +1180,133 @@ button.pets__arrow:hover {
     height: 126px;
   }
 }
+
+/*------------------QUESTION ----------------------------------*/
+.question {
+  background: #1f1c1d;
+  padding-top: 75px;
+}
+
+.question__title {
+  font-family: Yeseva One;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.question__text {
+  font-size: 16px;
+  line-height: 25px;
+  color: #a07b50;
+  margin: 25px auto 55px;
+  text-align: center;
+}
+
+.question__list {
+  width: 800px;
+  margin: 0 auto;
+  counter-reset: num;
+}
+
+.question__item {
+  position: relative;
+}
+
+.question__item::before {
+  position: absolute;
+  content: "0" counter(num);
+  counter-increment: num;
+  left: -100px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 82px;
+  color: #a07b50;
+}
+
+.question ol > li:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.question__click {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #ddd0c3;
+  text-align: start;
+  padding: 35px 200px 35px 40px;
+  width: 100%;
+  background-color: transparent;
+  border: 0.5px solid #a07b50;
+  cursor: pointer;
+}
+
+.question__button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 104px;
+  border-left: 0.5px solid #a07b50;
+  cursor: pointer;
+}
+
+.question__button::before {
+  width: 2px;
+  height: 18px;
+}
+
+.question__button::after {
+  width: 18px;
+  height: 2px;
+}
+
+.question__button::before, .question__button::after {
+  position: absolute;
+  content: "";
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #a07b50;
+  top: 50%;
+  left: 50%;
+}
+
+.question .question__click:focus .question__button:after,
+.question .question__click:focus .question__button:before,
+.question .question__click:hover .question__button:after,
+.question .question__click:hover .question__button:before {
+  background-color: #fff;
+}
+
+.question .question__click:focus .question__button,
+.question .question__click:hover .question__button {
+  background-color: #a07b50;
+}
+
+.question__answer-inner {
+  padding: 35px 200px 35px 40px;
+  border: 0.5px solid #a07b50;
+}
+
+.question__description-part1, .question__description-part2 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #ddd0c3;
+}
+
+.question__description-part1 {
+  margin-bottom: 20px;
+}
+
+.question__btn {
+  margin: 35px 120px 35px auto;
+  background: #1f1c1d;
+}
