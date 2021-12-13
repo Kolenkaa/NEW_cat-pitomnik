@@ -28,3 +28,12 @@ document.querySelector('.team__slider-button--left').addEventListener('click', f
 	sliderInner.style.left = -offset + 'px';
 })
 
+/*----------------FAQ-------------*/
+
+const questionItem = document.querySelector(".question__item");
+
+document.querySelectorAll('.question__item').forEach(item => {
+	item.addEventListener('click', function () {
+		this.classList.toggle('active');
+	});
+});

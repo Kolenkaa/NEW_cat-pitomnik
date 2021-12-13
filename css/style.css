@@ -1293,6 +1293,11 @@ button.pets__arrow:hover {
 .question__answer-inner {
   padding: 35px 200px 35px 40px;
   border: 0.5px solid #a07b50;
+  display: none;
+}
+
+.question .question__item.active .question__answer-inner {
+  display: block;
 }
 
 .question__description-part1, .question__description-part2 {
