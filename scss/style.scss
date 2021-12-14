@@ -1157,6 +1157,7 @@ button.pets__arrow:hover {
 .question {
 	background: #1f1c1d;
 	padding-top: 75px;
+	padding-bottom: 35px;
 
 	&__title {
 		font-family: Yeseva One;
@@ -1175,7 +1176,6 @@ button.pets__arrow:hover {
 	}
 
 	&__list {
-		width: 800px;
 		margin: 0 auto;
 		counter-reset: num;
 	}
@@ -1206,7 +1206,7 @@ button.pets__arrow:hover {
 		line-height: 19px;
 		color: #ddd0c3;
 		text-align: start;
-		padding: 35px 200px 35px 40px;
+		padding: 35px 330px 35px 40px;
 		width: 100%;
 		background-color: transparent;
 		border: 0.5px solid #a07b50;
@@ -1279,7 +1279,90 @@ button.pets__arrow:hover {
 	}
 
 	&__btn {
-		margin: 35px 120px 35px auto;
+		margin: 35px auto 0;
 		background: #1f1c1d;
+	}
+}
+
+/*------------------QUESTION < 1365 px -----------------------*/
+@media (max-width: 1365px) {
+	.question {
+		padding-top: 130px;
+
+		&__text {
+			max-width: 190px;
+			margin: 20px auto 50px;
+		}
+
+		&__list {
+			max-width: 550px;
+		}
+
+		.question__item {
+			transform: translateX(50px);
+		}
+
+		&__item::before {
+			font-size: 50px;
+			line-height: 59px;
+			left: -80px;
+		}
+
+		&__click {
+			padding: 28px 140px 28px 30px;
+		}
+
+		&__button {
+			width: 72px;
+		}
+	}
+}
+/*------------------QUESTION < 767 px -----------------------*/
+@media (max-width: 767px) {
+	.question {
+		padding-top: 60px;
+
+		&__title {
+			font-size: 28px;
+			line-height: 32px;
+		}
+
+		&__text {
+			font-size: 14px;
+			line-height: 20px;
+			margin: 45px auto 40px;
+		}
+
+		&__list {
+			max-width: 290px;
+		}
+
+		.question__item {
+			transform: translateX(0px);
+		}
+
+		&__item::before {
+			display: none;
+		}
+
+		&__click {
+			font-size: 14px;
+			line-height: 20px;
+			padding: 18px 50px 18px 15px;
+		}
+
+		&__button {
+			width: 42px;
+		}
+
+		&__answer-inner {
+			padding: 18px;
+		}
+
+		&__description-part1,
+		&__description-part2 {
+			font-size: 14px;
+			line-height: 20px;
+		}
 	}
 }
