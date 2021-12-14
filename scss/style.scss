@@ -1109,6 +1109,7 @@ button.pets__arrow:hover {
 		font-size: 16px;
 		line-height: 24px;
 		margin-bottom: 40px;
+		color: rgba(255, 255, 255, 0.72);
 	}
 
 	&__social {
@@ -1435,9 +1436,10 @@ button.pets__arrow:hover {
 
 	&__description {
 		font-weight: 300;
-		font-size: 16px;
-		line-height: 24px;
+		font-size: 14px;
+		line-height: 23px;
 		margin-bottom: 40px;
+		color: rgba(255, 255, 255, 0.72);
 	}
 
 	&__down {
@@ -1480,3 +1482,45 @@ button.pets__arrow:hover {
 /*------------------ FEEDBACK < 1365px ----------------------------------*/
 
 /*------------------ FEEDBACK < 767px ----------------------------------*/
+
+/*------------------ FOOTER ----------------------------------*/
+.footer {
+	background-color: #151313;
+	padding-top: 70px;
+	padding-bottom: 70px;
+
+	&__wrapper {
+		display: flex;
+		max-width: 850px;
+		margin: 0 auto;
+		align-items: center;
+	}
+
+	&__logo {
+		margin-right: 120px;
+	}
+
+	&__social-media {
+		display: flex;
+		align-items: center;
+		margin-right: 150px;
+
+		& > li:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+
+	&__adress {
+		font-size: 14px;
+		line-height: 27px;
+		color: rgba(253, 242, 230, 0.83);
+		margin-right: 70px;
+	}
+
+	&__tel-link {
+		font-size: 14px;
+		line-height: 27px;
+		font-weight: 700;
+		color: #fdf2e6;
+	}
+}

@@ -1137,6 +1137,7 @@ button.pets__arrow:hover {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .team__social {
@@ -1461,9 +1462,10 @@ button.pets__arrow:hover {
 
 .feedback__description {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 23px;
   margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .feedback__down {
@@ -1512,3 +1514,52 @@ button.pets__arrow:hover {
 
 /*------------------ FEEDBACK < 1365px ----------------------------------*/
 /*------------------ FEEDBACK < 767px ----------------------------------*/
+/*------------------ FOOTER ----------------------------------*/
+.footer {
+  background-color: #151313;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 850px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__logo {
+  margin-right: 120px;
+}
+
+.footer__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 150px;
+}
+
+.footer__social-media > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__adress {
+  font-size: 14px;
+  line-height: 27px;
+  color: rgba(253, 242, 230, 0.83);
+  margin-right: 70px;
+}
+
+.footer__tel-link {
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #fdf2e6;
+}
