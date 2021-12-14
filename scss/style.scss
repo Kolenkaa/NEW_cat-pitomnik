@@ -1253,13 +1253,14 @@ button.pets__arrow:hover {
 		background-color: #a07b50;
 	}
 
-	&__answer {
-	}
-
 	&__answer-inner {
 		padding: 35px 200px 35px 40px;
 		border: 0.5px solid #a07b50;
 		display: none;
+	}
+
+	.question__item.active .question__button:before {
+		height: 0px;
 	}
 
 	.question__item.active .question__answer-inner {
@@ -1308,6 +1309,10 @@ button.pets__arrow:hover {
 			left: -80px;
 		}
 
+		ol > li:not(:last-child) {
+			margin-bottom: 25px;
+		}
+
 		&__click {
 			padding: 28px 140px 28px 30px;
 		}
@@ -1345,6 +1350,10 @@ button.pets__arrow:hover {
 			display: none;
 		}
 
+		ol > li:not(:last-child) {
+			margin-bottom: 30px;
+		}
+
 		&__click {
 			font-size: 14px;
 			line-height: 20px;
@@ -1366,3 +1375,108 @@ button.pets__arrow:hover {
 		}
 	}
 }
+
+/*------------------ FEEDBACK ----------------------------------*/
+
+.feedback {
+	background: #1f1c1d;
+	padding-top: 5px;
+	padding-bottom: 110px;
+
+	&__title {
+		font-family: Yeseva One;
+		font-size: 36px;
+		line-height: 42px;
+		margin: 0px auto 65px;
+		text-align: center;
+	}
+
+	&__slider {
+		position: relative;
+		margin: 0 auto;
+		width: 640px;
+		background: #151313;
+		padding: 110px 100px;
+		left: 180px;
+	}
+	&__photo {
+		position: absolute;
+		overflow: hidden;
+		width: 481px;
+		//height: 356px;
+		left: -410px;
+		top: 40px;
+	}
+	&__photo-inner {
+		position: relative;
+		width: 300%;
+		display: flex;
+		left: 0;
+		transition: all ease 0.3s;
+	}
+	&__photo-second {
+		left: auto;
+		right: -481px; //??
+		top: auto;
+	}
+	&__photo-third {
+		left: auto;
+		right: -962px;
+		top: auto;
+	}
+
+	&__name {
+		margin-bottom: 10px;
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 500;
+		color: #ffffff;
+	}
+
+	&__description {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 40px;
+	}
+
+	&__down {
+		display: flex;
+		align-items: center;
+	}
+
+	&__date {
+		font-size: 12px;
+		line-height: 19px;
+		margin-right: 36px;
+		color: #a07b50;
+	}
+
+	&__social {
+		display: flex;
+	}
+
+	&__social-decor {
+		padding: 7px;
+		border: 0.5px solid #a07b50;
+		margin-right: 16px;
+	}
+
+	&__slider-button {
+		position: absolute;
+		background-color: transparent;
+		cursor: pointer;
+		border: none;
+		top: 50%;
+	}
+	&__slider-button--left {
+		left: -490px;
+	}
+	&__slider-button--right {
+		right: -80px;
+	}
+}
+
+/*------------------ FEEDBACK < 1365px ----------------------------------*/
+
+/*------------------ FEEDBACK < 767px ----------------------------------*/
