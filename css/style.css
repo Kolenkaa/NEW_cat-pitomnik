@@ -1206,6 +1206,7 @@ button.pets__arrow:hover {
 }
 
 .question__list {
+  width: 800px;
   margin: 0 auto;
   counter-reset: num;
 }
@@ -1242,7 +1243,7 @@ button.pets__arrow:hover {
   line-height: 19px;
   color: #ddd0c3;
   text-align: start;
-  padding: 35px 330px 35px 40px;
+  padding: 35px 230px 35px 40px;
   width: 100%;
   background-color: transparent;
   border: 0.5px solid #a07b50;
@@ -1536,6 +1537,12 @@ button.pets__arrow:hover {
   margin-right: 120px;
 }
 
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer__social-media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1562,4 +1569,70 @@ button.pets__arrow:hover {
   line-height: 27px;
   font-weight: 700;
   color: #fdf2e6;
+}
+
+/*------------------ FOOTER <1365px ----------------------------------*/
+@media (max-width: 1365px) {
+  .footer {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .footer__wrapper {
+    max-width: 670px;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__social-media {
+    margin-right: 130px;
+  }
+  .footer__adress {
+    margin-right: 80px;
+  }
+}
+
+/*------------------ FOOTER <767px ----------------------------------*/
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    max-width: 300px;
+  }
+  .footer__logo {
+    display: block;
+    margin: 0;
+  }
+  .footer__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 15px;
+  }
+  .footer__social-media {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0;
+  }
+  .footer__adress {
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .footer__tel {
+    margin-bottom: 15px;
+  }
+  .footer__tel-link {
+    line-height: 20px;
+  }
 }

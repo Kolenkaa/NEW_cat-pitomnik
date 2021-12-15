@@ -1177,6 +1177,7 @@ button.pets__arrow:hover {
 	}
 
 	&__list {
+		width: 800px;
 		margin: 0 auto;
 		counter-reset: num;
 	}
@@ -1207,7 +1208,7 @@ button.pets__arrow:hover {
 		line-height: 19px;
 		color: #ddd0c3;
 		text-align: start;
-		padding: 35px 330px 35px 40px;
+		padding: 35px 230px 35px 40px;
 		width: 100%;
 		background-color: transparent;
 		border: 0.5px solid #a07b50;
@@ -1500,6 +1501,10 @@ button.pets__arrow:hover {
 		margin-right: 120px;
 	}
 
+	&__contacts {
+		display: flex;
+	}
+
 	&__social-media {
 		display: flex;
 		align-items: center;
@@ -1522,5 +1527,71 @@ button.pets__arrow:hover {
 		line-height: 27px;
 		font-weight: 700;
 		color: #fdf2e6;
+	}
+}
+
+/*------------------ FOOTER <1365px ----------------------------------*/
+@media (max-width: 1365px) {
+	.footer {
+		padding-top: 45px;
+		padding-bottom: 45px;
+
+		&__wrapper {
+			max-width: 670px;
+		}
+
+		&__logo {
+			display: none;
+		}
+
+		&__social-media {
+			margin-right: 130px;
+		}
+
+		&__adress {
+			margin-right: 80px;
+		}
+	}
+}
+/*------------------ FOOTER <767px ----------------------------------*/
+@media (max-width: 767px) {
+	.footer {
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		&__wrapper {
+			flex-direction: column-reverse;
+			max-width: 300px;
+		}
+
+		&__logo {
+			display: block;
+			margin: 0;
+		}
+
+		&__contacts {
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 15px;
+		}
+
+		&__social-media {
+			order: 3;
+			margin: 0;
+		}
+
+		&__adress {
+			line-height: 20px;
+			margin: 0;
+			margin-bottom: 15px;
+		}
+
+		&__tel {
+			margin-bottom: 15px;
+		}
+
+		&__tel-link {
+			line-height: 20px;
+		}
 	}
 }
