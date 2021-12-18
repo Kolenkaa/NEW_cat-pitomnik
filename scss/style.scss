@@ -1387,49 +1387,71 @@ button.pets__arrow:hover {
 	padding-bottom: 110px;
 
 	&__title {
-		font-family: Yeseva One;
+		font-family: Yeseva One, sans-serif;
 		font-size: 36px;
 		line-height: 42px;
-		margin: 0px auto 65px;
+		margin: 0px auto 142px;
 		text-align: center;
 	}
 
 	&__slider {
+		margin-top: 100px;
 		position: relative;
+		display: flex;
+		height: fit-content;
 		margin: 0 auto;
-		width: 640px;
-		background: #151313;
-		padding: 110px 100px;
-		left: 180px;
 	}
+
+	&__slider-button {
+		position: absolute;
+		background: transparent;
+		cursor: pointer;
+		outline: none;
+		border: 0;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+
+	&__slider-button:hover svg {
+		stroke-opacity: 0.7;
+	}
+
+	&__slider-button--left {
+		left: -30px;
+	}
+	&__slider-button--right {
+		right: -30px;
+	}
+
+	&__slider-inner {
+		position: relative;
+	}
+
 	&__photo {
 		position: absolute;
-		overflow: hidden;
-		width: 481px;
-		//height: 356px;
-		left: -410px;
-		top: 40px;
+		width: 302px;
+		height: 208px;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
-	&__photo-inner {
-		position: relative;
-		width: 300%;
+
+	&__photo img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__content {
+		padding: 148px 85px 36px;
+		background: #151313;
+		color: #a07b50;
 		display: flex;
-		left: 0;
-		transition: all ease 0.3s;
-	}
-	&__photo-second {
-		left: auto;
-		right: -481px; //??
-		top: auto;
-	}
-	&__photo-third {
-		left: auto;
-		right: -962px;
-		top: auto;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	&__name {
-		margin-bottom: 10px;
 		font-size: 24px;
 		line-height: 28px;
 		font-weight: 500;
@@ -1437,53 +1459,106 @@ button.pets__arrow:hover {
 	}
 
 	&__description {
+		margin-top: 14px;
 		font-weight: 300;
-		font-size: 14px;
-		line-height: 23px;
-		margin-bottom: 40px;
+		font-size: 16px;
+		line-height: 25px;
 		color: rgba(255, 255, 255, 0.72);
+		width: 410px;
+		height: 110px;
+		text-align: center;
 	}
 
-	&__down {
+	&__footer {
 		display: flex;
+		justify-content: center;
 		align-items: center;
+		margin-top: 12px;
 	}
 
 	&__date {
 		font-size: 12px;
 		line-height: 19px;
-		margin-right: 36px;
+		//margin-right: 36px;
 		color: #a07b50;
 	}
 
 	&__social {
+		margin-left: 36px;
 		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
-	&__social-decor {
-		padding: 7px;
-		border: 0.5px solid #a07b50;
-		margin-right: 16px;
+	&__social-item:not(:first-child) {
+		margin-left: 28px;
 	}
 
-	&__slider-button {
-		position: absolute;
-		background-color: transparent;
-		cursor: pointer;
-		border: none;
-		top: 50%;
-	}
-	&__slider-button--left {
-		left: -490px;
-	}
-	&__slider-button--right {
-		right: -80px;
+	&__social-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 28px;
+		height: 28px;
+		border: 0.5px solid rgba(160, 123, 80, 0.27);
 	}
 }
 
 /*------------------ FEEDBACK < 1365px ----------------------------------*/
 
 /*------------------ FEEDBACK < 767px ----------------------------------*/
+
+@media (max-width: 767px) {
+	.feedback {
+		&__title {
+			margin: 0px auto 130px;
+		}
+
+		&__photo {
+			width: 242px;
+			height: 166px;
+		}
+
+		&__content {
+			padding: 118px 28px 40px;
+			background: #181617;
+		}
+
+		&__name {
+			font-size: 18px;
+			line-height: 21px;
+		}
+
+		&__description {
+			font-size: 14px;
+			line-height: 20px;
+			width: 228px;
+			height: 150px;
+		}
+
+		&__date {
+			line-height: 17px;
+		}
+
+		&__slider-button {
+			top: 0;
+			z-index: 100;
+		}
+
+		&__slider-button svg {
+			//width: 8px;
+			//height: 18px;
+			transform: scale(0.5); //???
+		}
+
+		&__slider-button--left {
+			left: 0;
+		}
+		&__slider-button--right {
+			right: 0;
+		}
+	}
+}
 
 /*------------------ FOOTER ----------------------------------*/
 .footer {
@@ -1608,7 +1683,7 @@ button.pets__arrow:hover {
 	left: 0;
 	top: 0;
 	z-index: 999;
-	
+
 	&__container {
 		display: flex;
 		flex-direction: column;

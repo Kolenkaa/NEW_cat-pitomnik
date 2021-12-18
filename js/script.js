@@ -38,6 +38,45 @@ document.querySelectorAll('.question__item').forEach(item => {
 	});
 });
 
+/*----------------FEEDBACK-SLIDER-------------*/
+
+const leftButton = document.getElementById("leftButton");
+const rightButton = document.getElementById("rightButton");
+const slides = document.getElementsByClassName("feedback__slider-inner");
+
+leftButton.addEventListener("click", onLeftClick);
+rightButton.addEventListener("click", onRightClick);
+
+let slideIndex = 1;
+
+onClick(slideIndex);
+
+function onLeftClick() {
+	slideIndex = slideIndex - 1;
+	onClick(slideIndex);
+}
+
+function onRightClick() {
+	slideIndex = slideIndex + 1;
+	onClick(slideIndex);
+}
+
+function onClick(newIndex) {
+	if (newIndex > slides.length) {
+		slideIndex = 1;
+	}
+
+	if (newIndex < 1) {
+		slideIndex = slides.length;
+	}
+
+	for (let i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+
+	slides[slideIndex - 1].style.display = "block";
+}
+
 
 /*-----------modal-------------------------*/
 
@@ -45,7 +84,7 @@ const openModal = document.getElementById('open__modal');
 const closeModal = document.getElementById('close__modal');
 const modal = document.getElementById('modal');
 
-openModal.addEventListener('click', function(e){
+openModal.addEventListener('click', function (e) {
 	e.preventDefault();
 	modal.classList.add('active');
 })
