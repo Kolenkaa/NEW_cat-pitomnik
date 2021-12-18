@@ -1320,6 +1320,7 @@ button.pets__arrow:hover {
 .question__btn {
   margin: 35px auto 0;
   background: #1f1c1d;
+  cursor: pointer;
 }
 
 /*------------------QUESTION < 1365 px -----------------------*/
@@ -1637,16 +1638,16 @@ button.pets__arrow:hover {
   }
 }
 
-/*-----------modal---------------*/
+/*-----------MODAL---------------*/
 .modal {
-  background-color: #674C33;
+  display: none;
+  background-color: rgba(103, 76, 51, 0.8);
   width: 100%;
   height: 100%;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 999;
-  opacity: 0.8;
 }
 
 .modal__container {
@@ -1665,13 +1666,13 @@ button.pets__arrow:hover {
   position: relative;
   width: 680px;
   margin: auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10px;
   padding: 30px 40px 40px;
 }
 
 .modal__title {
-  color: #674C33;
+  color: #674c33;
   font-family: Yeseva One, sans-serif;
   font-size: 24px;
   line-height: 32px;
@@ -1679,7 +1680,7 @@ button.pets__arrow:hover {
 
 .modal__text {
   margin-top: 25px;
-  color: #674C33;
+  color: #674c33;
   font-size: 18px;
   line-height: 24px;
 }
@@ -1688,11 +1689,13 @@ button.pets__arrow:hover {
   margin-top: 35px;
 }
 
-.modal .modal__write-us input[type=tel], .modal .modal__write-us input[type=text] {
+.modal .modal__write-us input[type="tel"],
+.modal .modal__write-us input[type="text"] {
   width: 280px;
   padding: 18px 24px;
   border-radius: 4px;
   border: 1px solid rgba(103, 76, 51, 0.1);
+  margin-top: 8px;
 }
 
 .modal__user-data {
@@ -1702,14 +1705,14 @@ button.pets__arrow:hover {
 }
 
 .modal__user-name {
-  color: #674C33;
+  color: #674c33;
   font-size: 16px;
   line-height: 32px;
   font-weight: 700;
 }
 
 .modal__user-number {
-  color: #674C33;
+  color: #674c33;
   font-size: 16px;
   line-height: 32px;
   font-weight: 700;
@@ -1740,10 +1743,14 @@ button.pets__arrow:hover {
   text-decoration: underline;
 }
 
+.modal__personal-data:hover {
+  color: #b29375;
+}
+
 .modal__btn {
   width: 280px;
   cursor: pointer;
-  background-color: #A07B50;
+  background-color: #a07b50;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
@@ -1751,9 +1758,73 @@ button.pets__arrow:hover {
 
 .modal__close-btn {
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 32px;
+  top: 32px;
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+.modal.active {
+  display: block;
+}
+
+/*-----------MODAL <1365 px ---------------*/
+@media (max-width: 769px) {
+  .modal__body {
+    width: 284px;
+    padding: 30px 20px;
+  }
+  .modal__title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .modal__text {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .modal__write-us {
+    margin-top: 25px;
+  }
+  .modal .modal__write-us input[type="tel"],
+  .modal .modal__write-us input[type="text"] {
+    width: 244px;
+    padding: 16px 20px;
+    margin-top: 13px;
+  }
+  .modal__user-data {
+    display: block;
+  }
+  .modal__user-name {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .modal__user-number {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .modal__personal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 28px;
+  }
+  .modal__user-check {
+    font-size: 10px;
+    line-height: 15px;
+    width: 244px;
+  }
+  .modal__btn {
+    width: 244px;
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+  .modal__close-btn {
+    right: 15px;
+    top: 15px;
+  }
 }

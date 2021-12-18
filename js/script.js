@@ -37,3 +37,19 @@ document.querySelectorAll('.question__item').forEach(item => {
 		this.classList.toggle('active');
 	});
 });
+
+
+/*-----------modal-------------------------*/
+
+const openModal = document.getElementById('open__modal');
+const closeModal = document.getElementById('close__modal');
+const modal = document.getElementById('modal');
+
+openModal.addEventListener('click', function(e){
+	e.preventDefault();
+	modal.classList.add('active');
+})
+
+closeModal.addEventListener('click', () => {
+	modal.classList.remove('active');
+})
