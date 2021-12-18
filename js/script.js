@@ -8,25 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	};
 });
 
-/*----------------Team__Slider-------------*/
-let offset = 0; // смещение от левого края
-const sliderInner = document.querySelector('.team__photo-inner');
-
-document.querySelector('.team__slider-button--right').addEventListener('click', function () {
-	offset = offset + 360;// offset += 360;
-	if (offset > 720) {
-		offset = 0;
-	}
-	sliderInner.style.left = -offset + 'px';
-})
-
-document.querySelector('.team__slider-button--left').addEventListener('click', function () {
-	offset = offset - 360;// offset -= 360;
-	if (offset < 0) {
-		offset = 720;
-	}
-	sliderInner.style.left = -offset + 'px';
-})
 
 /*----------------FAQ-------------*/
 
@@ -43,6 +24,7 @@ document.querySelectorAll('.question__item').forEach(item => {
 const leftButton = document.getElementById("leftButton");
 const rightButton = document.getElementById("rightButton");
 const slides = document.getElementsByClassName("feedback__slider-inner");
+const slidesTeam = document.getElementsByClassName("team__slider-inner");
 
 leftButton.addEventListener("click", onLeftClick);
 rightButton.addEventListener("click", onRightClick);
@@ -72,9 +54,11 @@ function onClick(newIndex) {
 
 	for (let i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none";
+		slidesTeam[i].style.display = "none";
 	}
 
 	slides[slideIndex - 1].style.display = "block";
+	slidesTeam[slideIndex - 1].style.display = "block";
 }
 
 

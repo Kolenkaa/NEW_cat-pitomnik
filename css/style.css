@@ -1054,11 +1054,11 @@ button.pets__arrow:hover {
 .team {
   background: #151313;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 193px;
 }
 
 .team__title {
-  font-family: Yeseva One;
+  font-family: Yeseva One, sans-serif;
   font-size: 36px;
   line-height: 42px;
   margin: 0px auto;
@@ -1075,45 +1075,30 @@ button.pets__arrow:hover {
 
 .team__slider {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 0 auto;
+}
+
+.team__slider-inner {
   width: 660px;
   background: #1f1c1d;
   padding: 70px 100px;
   border: 24px solid #151313;
   outline: 0.5px solid rgba(160, 123, 80, 0.43);
-  left: 150px;
 }
 
 .team__photo {
   position: absolute;
-  overflow: hidden;
   width: 360px;
   height: 356px;
-  left: -320px;
-  top: -26px;
-}
-
-.team__photo-inner {
-  position: relative;
-  width: 300%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  left: 0;
-  -webkit-transition: all ease 0.3s;
-  transition: all ease 0.3s;
-}
-
-.team__photo-second {
-  left: auto;
-  right: -360px;
-  top: auto;
-}
-
-.team__photo-third {
-  left: auto;
-  right: -720px;
-  top: auto;
+  right: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .team__name {
@@ -1155,15 +1140,15 @@ button.pets__arrow:hover {
   background-color: transparent;
   cursor: pointer;
   border: none;
-  top: 50%;
+  top: 115%;
 }
 
 .team__slider-button--left {
-  left: -400px;
+  left: 255px;
 }
 
 .team__slider-button--right {
-  right: -100px;
+  right: 110px;
 }
 
 /*-------------------TEAM < 1365px ------------------------*/
@@ -1176,9 +1161,73 @@ button.pets__arrow:hover {
 
 /*-------------------TEAM < 767px ------------------------*/
 @media (max-width: 767px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .team__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .team__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 35px auto 100px;
+    max-width: 250px;
+  }
+  .team__slider-inner {
+    width: 286px;
+    background: #1f1c1d;
+    padding: 88px 11px 16px;
+    outline: none;
+    border: none;
+  }
+  .team__name {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+  .team__job {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .team__description {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .team__social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team__social > li:not(:first-child) {
+    margin-left: 15px;
+  }
+  .team__photo {
+    width: 126px;
+    height: 126px;
+    -webkit-transform: translate(-84px, -155px);
+            transform: translate(-84px, -155px);
+  }
   .team__photo img {
     width: 126px;
     height: 126px;
+  }
+  .team__slider-button {
+    top: -15px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .team__slider-button--left {
+    left: 46px;
+  }
+  .team__slider-button--right {
+    right: 55px;
   }
 }
 

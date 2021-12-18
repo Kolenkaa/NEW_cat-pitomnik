@@ -1036,10 +1036,10 @@ button.pets__arrow:hover {
 .team {
 	background: #151313;
 	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-bottom: 193px;
 
 	&__title {
-		font-family: Yeseva One;
+		font-family: Yeseva One, sans-serif;
 		font-size: 36px;
 		line-height: 42px;
 		margin: 0px auto;
@@ -1052,40 +1052,27 @@ button.pets__arrow:hover {
 		max-width: 510px;
 		text-align: center;
 	}
+
 	&__slider {
 		position: relative;
+		display: flex;
+		height: fit-content;
 		margin: 0 auto;
+	}
+
+	&__slider-inner {
 		width: 660px;
 		background: #1f1c1d;
 		padding: 70px 100px;
 		border: 24px solid #151313;
 		outline: 0.5px solid rgba(160, 123, 80, 0.43);
-		left: 150px;
 	}
 	&__photo {
 		position: absolute;
-		overflow: hidden;
 		width: 360px;
 		height: 356px;
-		left: -320px;
-		top: -26px;
-	}
-	&__photo-inner {
-		position: relative;
-		width: 300%;
-		display: flex;
-		left: 0;
-		transition: all ease 0.3s;
-	}
-	&__photo-second {
-		left: auto;
-		right: -360px; //??
-		top: auto;
-	}
-	&__photo-third {
-		left: auto;
-		right: -720px;
-		top: auto;
+		right: 0;
+		transform: translateY(50%);
 	}
 
 	&__name {
@@ -1125,13 +1112,14 @@ button.pets__arrow:hover {
 		background-color: transparent;
 		cursor: pointer;
 		border: none;
-		top: 50%;
+		top: 115%;
+		//bottom: -25%;  //??? или
 	}
 	&__slider-button--left {
-		left: -400px;
+		left: 255px;
 	}
 	&__slider-button--right {
-		right: -100px;
+		right: 110px;
 	}
 }
 /*-------------------TEAM < 1365px ------------------------*/
@@ -1146,13 +1134,81 @@ button.pets__arrow:hover {
 /*-------------------TEAM < 767px ------------------------*/
 @media (max-width: 767px) {
 	.team {
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+		&__title {
+			font-size: 28px;
+			line-height: 32px;
+		}
+
+		&__text {
+			font-size: 14px;
+			line-height: 20px;
+			margin: 35px auto 100px;
+			max-width: 250px;
+		}
+
+		&__slider-inner {
+			width: 286px;
+			background: #1f1c1d;
+			padding: 88px 11px 16px;
+			outline: none;
+			border: none;
+		}
+
+		&__name {
+			margin-bottom: 10px;
+			font-size: 18px;
+			line-height: 21px;
+			text-align: center;
+		}
+
+		&__job {
+			font-size: 14px;
+			line-height: 19px;
+			margin-bottom: 25px;
+			text-align: center;
+		}
+
+		&__description {
+			font-size: 14px;
+			line-height: 20px;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		&__social {
+			justify-content: center;
+
+			& > li:not(:first-child) {
+				margin-left: 15px;
+			}
+		}
+
+		&__photo {
+			width: 126px;
+			height: 126px;
+			transform: translate(-84px, -155px);
+		}
+
 		&__photo img {
 			width: 126px;
 			height: 126px;
 		}
+		
+		&__slider-button {			
+			top: -15px;
+			transform: scale(0.6);
+		}
+		&__slider-button--left {
+			left: 46px;
+		}
+		&__slider-button--right {
+			right: 55px;
+		}
 	}
 }
-
 /*------------------QUESTION ----------------------------------*/
 
 .question {
