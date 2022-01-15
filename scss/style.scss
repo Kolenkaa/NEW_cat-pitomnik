@@ -54,6 +54,7 @@ body {
 	background-color: #181617;
 	border: 0.5px solid #a07b50;
 	padding: 16px 36px;
+	cursor: pointer;
 
 	@media (max-width: 767px) {
 		font-size: 12px;
@@ -871,15 +872,28 @@ button.pets__arrow:hover {
 	}
 }
 
+/*-------------------ABOUT < 1365px------------------------*/
+@media (max-width: 1365px) {
+	.about__list {
+		width: 320px;
+		align-self: center;
+	}
+}
+
 /*-------------------ABOUT < 767px------------------------*/
 @media (max-width: 767px) {
 	.about {
 		padding-top: 75px;
 		padding-bottom: 60px;
 
+		&__item {			
+			padding: 16px 14px;
+		}
+
 		&__title {
 			font-size: 28px;
 			line-height: 32px;
+			text-align: center;
 		}
 
 		&__text {
@@ -1044,6 +1058,7 @@ button.pets__arrow:hover {
 		line-height: 42px;
 		margin: 0px auto;
 	}
+
 	&__text {
 		font-size: 16px;
 		line-height: 25px;
@@ -1068,8 +1083,9 @@ button.pets__arrow:hover {
 		outline: 0.5px solid rgba(160, 123, 80, 0.43);
 		transform: translateX(150px);
 	}
+
 	&__photo {
-		position: absolute;		
+		position: absolute;
 		width: 360px;
 		height: 356px;
 		left: -340px;
@@ -1108,16 +1124,30 @@ button.pets__arrow:hover {
 		}
 	}
 
+	&__social-link:hover {
+		svg {
+			fill: #a07b50;
+		}
+	}
+
 	&__slider-button {
 		position: absolute;
 		background-color: transparent;
 		cursor: pointer;
 		border: none;
-		top: 40%;		
+		top: 40%;
 	}
+
+	&__slider-button:hover {
+		svg {
+			stroke: #ffffff;			
+		}		
+	}
+
 	&__slider-button--left {
 		left: -240px;
 	}
+
 	&__slider-button--right {
 		right: -230px;
 	}
@@ -1129,23 +1159,26 @@ button.pets__arrow:hover {
 			width: 207px;
 			height: 209px;
 		}
-	
+
 		&__slider-inner {
-			transform: translateX(0px);	
+			transform: translateX(0px);
 		}
-		&__photo {	
+
+		&__photo {
 			left: 0;
-			top: 0;		
+			top: 0;
 			right: 0;
-			transform: translate(100%,70%);
+			transform: translate(100%, 70%);
 		}
-				
-		&__slider-button {			
-			top: 115%;		
+
+		&__slider-button {
+			top: 115%;
 		}
+
 		&__slider-button--left {
 			left: 310px;
 		}
+
 		&__slider-button--right {
 			right: 0;
 		}
@@ -1216,9 +1249,9 @@ button.pets__arrow:hover {
 			width: 126px;
 			height: 126px;
 		}
-		
-		&__slider-button {	
-			z-index: 1;		
+
+		&__slider-button {
+			z-index: 1;
 			top: -15px;
 			transform: scale(0.6);
 		}
@@ -1489,8 +1522,10 @@ button.pets__arrow:hover {
 		transform: translate(0, -50%);
 	}
 
-	&__slider-button:hover svg {
-		stroke-opacity: 0.7;
+	&__slider-button:hover {
+		svg {
+			stroke: #ffffff;			
+		}		
 	}
 
 	&__slider-button--left {
@@ -1505,8 +1540,8 @@ button.pets__arrow:hover {
 	}
 
 	&__photo {
-		position: absolute;	
-		z-index: 1;		
+		position: absolute;
+		z-index: 1;
 		transform: translate(-40%, 10%);
 	}
 
@@ -1523,7 +1558,7 @@ button.pets__arrow:hover {
 		color: #a07b50;
 		display: flex;
 		transform: translateX(200px);
-		flex-direction: column;		
+		flex-direction: column;
 	}
 
 	&__name {
@@ -1539,11 +1574,11 @@ button.pets__arrow:hover {
 		font-size: 14px;
 		line-height: 23px;
 		color: rgba(255, 255, 255, 0.72);
-		width: 410px;				
+		width: 410px;
 	}
 
 	&__footer {
-		display: flex;		
+		display: flex;
 		align-items: center;
 		margin-top: 44px;
 		margin-left: 25px;
@@ -1551,7 +1586,7 @@ button.pets__arrow:hover {
 
 	&__date {
 		font-size: 12px;
-		line-height: 19px;		
+		line-height: 19px;
 		color: #a07b50;
 	}
 
@@ -1578,36 +1613,35 @@ button.pets__arrow:hover {
 
 /*------------------ FEEDBACK < 1365px ----------------------------------*/
 @media (max-width: 1364px) {
-	.feedback {		
-	
+	.feedback {
 		&__slider-button--left {
 			left: -30px;
 		}
 		&__slider-button--right {
 			right: -30px;
 		}
-		
-		&__photo {			
+
+		&__photo {
 			width: 302px;
 			height: 208px;
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
-		
+
 		&__content {
-			padding: 148px 85px 36px;			
+			padding: 148px 85px 36px;
 			align-items: center;
 			transform: translateX(0px);
 		}
-		
-		&__description {	
+
+		&__description {
 			text-align: center;
 		}
-	
-		&__footer {			
-			justify-content: center;			
+
+		&__footer {
+			justify-content: center;
 			margin-top: 25px;
-		}			
+		}
 	}
 }
 /*------------------ FEEDBACK < 767px ----------------------------------*/
@@ -1649,7 +1683,7 @@ button.pets__arrow:hover {
 			z-index: 100;
 		}
 
-		&__slider-button svg {			
+		&__slider-button svg {
 			transform: scale(0.5);
 		}
 
@@ -1690,6 +1724,12 @@ button.pets__arrow:hover {
 
 		& > li:not(:last-child) {
 			margin-right: 10px;
+		}
+	}
+
+	&__social-item:hover {
+		svg {
+			fill: #fff;
 		}
 	}
 

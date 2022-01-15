@@ -55,6 +55,7 @@ body {
   background-color: #181617;
   border: 0.5px solid #a07b50;
   padding: 16px 36px;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -899,15 +900,29 @@ button.pets__arrow:hover {
   max-width: 230px;
 }
 
+/*-------------------ABOUT < 1365px------------------------*/
+@media (max-width: 1365px) {
+  .about__list {
+    width: 320px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 /*-------------------ABOUT < 767px------------------------*/
 @media (max-width: 767px) {
   .about {
     padding-top: 75px;
     padding-bottom: 60px;
   }
+  .about__item {
+    padding: 16px 14px;
+  }
   .about__title {
     font-size: 28px;
     line-height: 32px;
+    text-align: center;
   }
   .about__text {
     font-weight: 300;
@@ -1136,12 +1151,20 @@ button.pets__arrow:hover {
   margin-left: 10px;
 }
 
+.team__social-link:hover svg {
+  fill: #a07b50;
+}
+
 .team__slider-button {
   position: absolute;
   background-color: transparent;
   cursor: pointer;
   border: none;
   top: 40%;
+}
+
+.team__slider-button:hover svg {
+  stroke: #ffffff;
 }
 
 .team__slider-button--left {
@@ -1509,7 +1532,7 @@ button.pets__arrow:hover {
 }
 
 .feedback__slider-button:hover svg {
-  stroke-opacity: 0.7;
+  stroke: #ffffff;
 }
 
 .feedback__slider-button--left {
@@ -1735,6 +1758,10 @@ button.pets__arrow:hover {
 
 .footer__social-media > li:not(:last-child) {
   margin-right: 10px;
+}
+
+.footer__social-item:hover svg {
+  fill: #fff;
 }
 
 .footer__adress {
