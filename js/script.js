@@ -19,17 +19,21 @@ document.querySelectorAll('.question__item').forEach(item => {
 	});
 });
 
-/*----------------FEEDBACK-SLIDER-------------*/
+/*-------------- TEAM-SLIDER-----------------*/
+const sliders = document.querySelectorAll(".slider");
 
-const leftButton = document.getElementById("leftButton");
-const rightButton = document.getElementById("rightButton");
-const slides = document.getElementsByClassName("feedback__slider-inner");
-const slidesTeam = document.getElementsByClassName("team__slider-inner");
+console.log(sliders, "sliders");
+
+sliders.forEach((_slider, index) => {
+	const sliderId = index + 1;
+	let slideIndex = 1;
+
+	const leftButton = document.querySelector(`#slider${sliderId} #leftButton`);
+	const rightButton = document.querySelector(`#slider${sliderId} #rightButton`);
+	const slides = document.querySelectorAll(`#slider${sliderId} .slider-inner`);
 
 leftButton.addEventListener("click", onLeftClick);
 rightButton.addEventListener("click", onRightClick);
-
-let slideIndex = 1;
 
 onClick(slideIndex);
 
@@ -53,15 +57,12 @@ function onClick(newIndex) {
 	}
 
 	for (let i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-		slidesTeam[i].style.display = "none";
+		slides[i].style.display = "none";		
 	}
 
-	slides[slideIndex - 1].style.display = "block";
-	slidesTeam[slideIndex - 1].style.display = "block";
-}
-
-
+	slides[slideIndex - 1].style.display = "block";	
+  }
+});
 /*-----------modal-------------------------*/
 
 const openModal = document.getElementById('open__modal');

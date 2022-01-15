@@ -399,7 +399,7 @@ a:hover {
 }
 
 .pets__title {
-  font-family: Yeseva One;
+  font-family: Yeseva One, sans-serif;
   font-size: 36px;
   line-height: 42px;
   padding-top: 230px;
@@ -578,7 +578,7 @@ button.pets__arrow:hover {
 }
 
 .features__title {
-  font-family: Yeseva One;
+  font-family: Yeseva One, sans-serif;
   font-size: 36px;
   line-height: 42px;
   margin: 0px auto;
@@ -827,7 +827,7 @@ button.pets__arrow:hover {
 }
 
 .about__title {
-  font-family: Yeseva One;
+  font-family: Yeseva One, sans-serif;
   font-size: 36px;
   line-height: 42px;
   margin: 0px auto;
@@ -934,7 +934,7 @@ button.pets__arrow:hover {
 }
 
 .care__title {
-  font-family: Yeseva One;
+  font-family: Yeseva One, sans-serif;
   font-size: 36px;
   line-height: 42px;
   margin: 0px auto;
@@ -1090,15 +1090,16 @@ button.pets__arrow:hover {
   padding: 70px 100px;
   border: 24px solid #151313;
   outline: 0.5px solid rgba(160, 123, 80, 0.43);
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
 }
 
 .team__photo {
   position: absolute;
   width: 360px;
   height: 356px;
-  right: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  left: -340px;
+  top: -25px;
 }
 
 .team__name {
@@ -1140,15 +1141,15 @@ button.pets__arrow:hover {
   background-color: transparent;
   cursor: pointer;
   border: none;
-  top: 115%;
+  top: 40%;
 }
 
 .team__slider-button--left {
-  left: 255px;
+  left: -240px;
 }
 
 .team__slider-button--right {
-  right: 110px;
+  right: -230px;
 }
 
 /*-------------------TEAM < 1365px ------------------------*/
@@ -1156,6 +1157,26 @@ button.pets__arrow:hover {
   .team__photo img {
     width: 207px;
     height: 209px;
+  }
+  .team__slider-inner {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  .team__photo {
+    left: 0;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate(100%, 70%);
+            transform: translate(100%, 70%);
+  }
+  .team__slider-button {
+    top: 115%;
+  }
+  .team__slider-button--left {
+    left: 310px;
+  }
+  .team__slider-button--right {
+    right: 0;
   }
 }
 
@@ -1211,14 +1232,15 @@ button.pets__arrow:hover {
   .team__photo {
     width: 126px;
     height: 126px;
-    -webkit-transform: translate(-84px, -155px);
-            transform: translate(-84px, -155px);
+    -webkit-transform: translate(75px, -70px);
+            transform: translate(75px, -70px);
   }
   .team__photo img {
     width: 126px;
     height: 126px;
   }
   .team__slider-button {
+    z-index: 1;
     top: -15px;
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
@@ -1239,7 +1261,7 @@ button.pets__arrow:hover {
 }
 
 .question__title {
-  font-family: Yeseva One;
+  font-family: Yeseva One, sans-serif;
   font-size: 36px;
   line-height: 42px;
   margin: 0px auto;
@@ -1491,11 +1513,11 @@ button.pets__arrow:hover {
 }
 
 .feedback__slider-button--left {
-  left: -30px;
+  left: -250px;
 }
 
 .feedback__slider-button--right {
-  right: -30px;
+  right: -250px;
 }
 
 .feedback__slider-inner {
@@ -1504,11 +1526,9 @@ button.pets__arrow:hover {
 
 .feedback__photo {
   position: absolute;
-  width: 302px;
-  height: 208px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  z-index: 1;
+  -webkit-transform: translate(-40%, 10%);
+          transform: translate(-40%, 10%);
 }
 
 .feedback__photo img {
@@ -1520,19 +1540,18 @@ button.pets__arrow:hover {
 }
 
 .feedback__content {
-  padding: 148px 85px 36px;
+  padding: 100px 85px 100px 145px;
   background: #151313;
   color: #a07b50;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .feedback__name {
@@ -1545,25 +1564,21 @@ button.pets__arrow:hover {
 .feedback__description {
   margin-top: 14px;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 23px;
   color: rgba(255, 255, 255, 0.72);
   width: 410px;
-  height: 110px;
-  text-align: center;
 }
 
 .feedback__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 12px;
+  margin-top: 44px;
+  margin-left: 25px;
 }
 
 .feedback__date {
@@ -1605,6 +1620,39 @@ button.pets__arrow:hover {
 }
 
 /*------------------ FEEDBACK < 1365px ----------------------------------*/
+@media (max-width: 1364px) {
+  .feedback__slider-button--left {
+    left: -30px;
+  }
+  .feedback__slider-button--right {
+    right: -30px;
+  }
+  .feedback__photo {
+    width: 302px;
+    height: 208px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .feedback__content {
+    padding: 148px 85px 36px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  .feedback__description {
+    text-align: center;
+  }
+  .feedback__footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 25px;
+  }
+}
+
 /*------------------ FEEDBACK < 767px ----------------------------------*/
 @media (max-width: 767px) {
   .feedback__title {

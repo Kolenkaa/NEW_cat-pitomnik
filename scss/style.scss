@@ -375,7 +375,7 @@ a:hover {
 	overflow: hidden;
 
 	&__title {
-		font-family: Yeseva One;
+		font-family: Yeseva One, sans-serif;
 		font-size: 36px;
 		line-height: 42px;
 		padding-top: 230px;
@@ -552,7 +552,7 @@ button.pets__arrow:hover {
 	background: #1f1c1d;
 
 	&__title {
-		font-family: Yeseva One;
+		font-family: Yeseva One, sans-serif;
 		font-size: 36px;
 		line-height: 42px;
 		margin: 0px auto;
@@ -810,7 +810,7 @@ button.pets__arrow:hover {
 	padding-bottom: 100px;
 
 	&__title {
-		font-family: Yeseva One;
+		font-family: Yeseva One, sans-serif;
 		font-size: 36px;
 		line-height: 42px;
 		margin: 0px auto;
@@ -908,7 +908,7 @@ button.pets__arrow:hover {
 	padding-bottom: 100px;
 
 	&__title {
-		font-family: Yeseva One;
+		font-family: Yeseva One, sans-serif;
 		font-size: 36px;
 		line-height: 42px;
 		margin: 0px auto;
@@ -1066,13 +1066,14 @@ button.pets__arrow:hover {
 		padding: 70px 100px;
 		border: 24px solid #151313;
 		outline: 0.5px solid rgba(160, 123, 80, 0.43);
+		transform: translateX(150px);
 	}
 	&__photo {
-		position: absolute;
+		position: absolute;		
 		width: 360px;
 		height: 356px;
-		right: 0;
-		transform: translateY(50%);
+		left: -340px;
+		top: -25px;
 	}
 
 	&__name {
@@ -1112,14 +1113,13 @@ button.pets__arrow:hover {
 		background-color: transparent;
 		cursor: pointer;
 		border: none;
-		top: 115%;
-		//bottom: -25%;  //??? или
+		top: 40%;		
 	}
 	&__slider-button--left {
-		left: 255px;
+		left: -240px;
 	}
 	&__slider-button--right {
-		right: 110px;
+		right: -230px;
 	}
 }
 /*-------------------TEAM < 1365px ------------------------*/
@@ -1128,6 +1128,26 @@ button.pets__arrow:hover {
 		&__photo img {
 			width: 207px;
 			height: 209px;
+		}
+	
+		&__slider-inner {
+			transform: translateX(0px);	
+		}
+		&__photo {	
+			left: 0;
+			top: 0;		
+			right: 0;
+			transform: translate(100%,70%);
+		}
+				
+		&__slider-button {			
+			top: 115%;		
+		}
+		&__slider-button--left {
+			left: 310px;
+		}
+		&__slider-button--right {
+			right: 0;
 		}
 	}
 }
@@ -1189,7 +1209,7 @@ button.pets__arrow:hover {
 		&__photo {
 			width: 126px;
 			height: 126px;
-			transform: translate(-84px, -155px);
+			transform: translate(75px, -70px);
 		}
 
 		&__photo img {
@@ -1197,7 +1217,8 @@ button.pets__arrow:hover {
 			height: 126px;
 		}
 		
-		&__slider-button {			
+		&__slider-button {	
+			z-index: 1;		
 			top: -15px;
 			transform: scale(0.6);
 		}
@@ -1217,7 +1238,7 @@ button.pets__arrow:hover {
 	padding-bottom: 35px;
 
 	&__title {
-		font-family: Yeseva One;
+		font-family: Yeseva One, sans-serif;
 		font-size: 36px;
 		line-height: 42px;
 		margin: 0px auto;
@@ -1473,10 +1494,10 @@ button.pets__arrow:hover {
 	}
 
 	&__slider-button--left {
-		left: -30px;
+		left: -250px;
 	}
 	&__slider-button--right {
-		right: -30px;
+		right: -250px;
 	}
 
 	&__slider-inner {
@@ -1484,11 +1505,9 @@ button.pets__arrow:hover {
 	}
 
 	&__photo {
-		position: absolute;
-		width: 302px;
-		height: 208px;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		position: absolute;	
+		z-index: 1;		
+		transform: translate(-40%, 10%);
 	}
 
 	&__photo img {
@@ -1499,12 +1518,12 @@ button.pets__arrow:hover {
 	}
 
 	&__content {
-		padding: 148px 85px 36px;
+		padding: 100px 85px 100px 145px;
 		background: #151313;
 		color: #a07b50;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		transform: translateX(200px);
+		flex-direction: column;		
 	}
 
 	&__name {
@@ -1517,25 +1536,22 @@ button.pets__arrow:hover {
 	&__description {
 		margin-top: 14px;
 		font-weight: 300;
-		font-size: 16px;
-		line-height: 25px;
+		font-size: 14px;
+		line-height: 23px;
 		color: rgba(255, 255, 255, 0.72);
-		width: 410px;
-		height: 110px;
-		text-align: center;
+		width: 410px;				
 	}
 
 	&__footer {
-		display: flex;
-		justify-content: center;
+		display: flex;		
 		align-items: center;
-		margin-top: 12px;
+		margin-top: 44px;
+		margin-left: 25px;
 	}
 
 	&__date {
 		font-size: 12px;
-		line-height: 19px;
-		//margin-right: 36px;
+		line-height: 19px;		
 		color: #a07b50;
 	}
 
@@ -1561,7 +1577,39 @@ button.pets__arrow:hover {
 }
 
 /*------------------ FEEDBACK < 1365px ----------------------------------*/
-
+@media (max-width: 1364px) {
+	.feedback {		
+	
+		&__slider-button--left {
+			left: -30px;
+		}
+		&__slider-button--right {
+			right: -30px;
+		}
+		
+		&__photo {			
+			width: 302px;
+			height: 208px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		
+		&__content {
+			padding: 148px 85px 36px;			
+			align-items: center;
+			transform: translateX(0px);
+		}
+		
+		&__description {	
+			text-align: center;
+		}
+	
+		&__footer {			
+			justify-content: center;			
+			margin-top: 25px;
+		}			
+	}
+}
 /*------------------ FEEDBACK < 767px ----------------------------------*/
 
 @media (max-width: 767px) {
@@ -1601,10 +1649,8 @@ button.pets__arrow:hover {
 			z-index: 100;
 		}
 
-		&__slider-button svg {
-			//width: 8px;
-			//height: 18px;
-			transform: scale(0.5); //???
+		&__slider-button svg {			
+			transform: scale(0.5);
 		}
 
 		&__slider-button--left {
