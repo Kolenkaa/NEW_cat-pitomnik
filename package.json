@@ -1,0 +1,25 @@
+{
+	"name": "new_cat-pitomnik",
+	"version": "1.0.0",
+	"description": "Web site for pitomnik with cats",
+	"main": "index.js",
+	"scripts": {
+		"livereload": "browser-sync start --server 'src' --files 'src/index.html' --files 'src/css/*.css' ",
+		"sass:watch": "sass --watch 'src/scss:src/css'",
+		"dev": "npm run sass:watch & npm run livereload"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Kolenkaa/NEW_cat-pitomnik.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Kolenkaa/NEW_cat-pitomnik/issues"
+	},
+	"homepage": "https://github.com/Kolenkaa/NEW_cat-pitomnik#readme",
+	"dependencies": {
+		"browser-sync": "^2.27.7",
+		"sass": "^1.47.0"
+	}
+}
