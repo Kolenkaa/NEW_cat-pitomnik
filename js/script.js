@@ -32,36 +32,36 @@ sliders.forEach((_slider, index) => {
 	const rightButton = document.querySelector(`#slider${sliderId} #rightButton`);
 	const slides = document.querySelectorAll(`#slider${sliderId} .slider-inner`);
 
-leftButton.addEventListener("click", onLeftClick);
-rightButton.addEventListener("click", onRightClick);
+	leftButton.addEventListener("click", onLeftClick);
+	rightButton.addEventListener("click", onRightClick);
 
-onClick(slideIndex);
-
-function onLeftClick() {
-	slideIndex = slideIndex - 1;
 	onClick(slideIndex);
-}
 
-function onRightClick() {
-	slideIndex = slideIndex + 1;
-	onClick(slideIndex);
-}
-
-function onClick(newIndex) {
-	if (newIndex > slides.length) {
-		slideIndex = 1;
+	function onLeftClick() {
+		slideIndex = slideIndex - 1;
+		onClick(slideIndex);
 	}
 
-	if (newIndex < 1) {
-		slideIndex = slides.length;
+	function onRightClick() {
+		slideIndex = slideIndex + 1;
+		onClick(slideIndex);
 	}
 
-	for (let i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";		
-	}
+	function onClick(newIndex) {
+		if (newIndex > slides.length) {
+			slideIndex = 1;
+		}
 
-	slides[slideIndex - 1].style.display = "block";	
-  }
+		if (newIndex < 1) {
+			slideIndex = slides.length;
+		}
+
+		for (let i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+
+		slides[slideIndex - 1].style.display = "block";
+	}
 });
 /*-----------modal-------------------------*/
 
