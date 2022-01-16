@@ -1,7 +1,4 @@
 «Meine-coon» - кошачий питомник
-<a href="https://Kolenkaa.github.io/NEW_cat-pitomnik/" rel="nofollow">
-  
-  Версия для просмотра</a>
 
 Что реализовано?
 - Адаптивная верстка (ПК, планшет, мобильный телефон),
